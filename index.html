@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>现代游览器博物馆</title>
+	  <link rel="stylesheet" href="css/bootstrap.css">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>
+	body{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.carousel{
+		margin-bottom: 30px;
+	}
+	.carousel-inner{
+		height:500px;
+	}
+	.carousel img {
+        min-height: 500px;
+    }
+	.carousel-caption {
+		top:300px;	
+	}
+	#mycontainer {
+		text-align: center;
+	}
+	.myhr {
+		margin: 40px;
+	}
+	.feature {
+		padding:40px 0;
+	}
+	.feature-heading {
+		margin-top: 120px;
+	}
+	.article {
+		text-align:left;
+	}
+	.footp{
+		margin-right: 100px;
+	}
+	</style>
+
+  </head>
+  <body>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<div class="container">
+  		<a class="navbar-brand" href="#">现代游览器博物馆</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+	
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">综述<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">简述</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          特点
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#tab-Chrome">Chrome</a>
+          <a class="dropdown-item" href="#tab-Firefox">Firefox</a>
+       	  <a class="dropdown-item" href="#tab-IE">IE</a>
+          <a class="dropdown-item" href="#tab-Opera">Opera</a>
+		  <a class="dropdown-item" href="#tab-Safari">Safiri</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#about">关于</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+	  <ol class="carousel-indicators">
+		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+	  </ol>
+	  <div class="carousel-inner">
+		<div class="carousel-item active">
+		  <img class="d-block w-100" src="img/chrome-big.jpg">
+		   <div class="carousel-caption d-none d-md-block">
+		<h1>Chrome</h1>
+		<a class="btn btn-primary" href="https://www.baidu.com/" role="button">点我下载</a>
+		 </div>
+		</div>
+		<div class="carousel-item">
+		  <img class="d-block w-100" src="img/firefox-big.jpg">
+		   <div class="carousel-caption d-none d-md-block">
+		<h1>Firefox</h1>
+		<a class="btn btn-primary" href="https://www.baidu.com/" role="button">点我下载</a>
+	  </div>
+		</div>
+		<div class="carousel-item">
+		  <img class="d-block w-100" src="img/ie-big.jpg">
+		   <div class="carousel-caption d-none d-md-block">
+		<h1>IE</h1>
+		<a class="btn btn-primary" href="https://www.baidu.com/" role="button">点我下载</a>
+	  </div>
+		</div>
+		<div class="carousel-item">
+		  <img class="d-block w-100" src="img/opera-big.jpg">
+		   <div class="carousel-caption d-none d-md-block">
+		<h1>Opera</h1>
+		<a class="btn btn-primary" href="https://www.baidu.com/" role="button">点我下载</a>
+	  </div>
+		</div>
+		<div class="carousel-item">
+		  <img class="d-block w-100" src="img/safari-big.jpg">
+		   <div class="carousel-caption d-none d-md-block">
+		<h1>Safari</h1>
+		<a class="btn btn-primary" href="https://www.baidu.com/" role="button">点我下载</a>
+	  </div>
+		</div>
+	  </div>
+	  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">上一页</span>
+	  </a>
+	  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">下一页</span>
+	  </a>
+	  </div>
+
+	<div class="container" id="mycontainer">
+	<div class="row">
+		<div class="col-md-4">
+			<img src="img/chrome-logo-small.jpg">
+			<h1>Chrome</h1>
+			<a class="btn btn-outline-dark" href="https://www.baidu.com/" role="button">点我下载</a>
+		</div>
+		<div class="col-md-4">
+			<img src="img/firefox-logo-small.jpg">
+			<h1>Firefox</h1>
+			<a class="btn btn-outline-dark" href="https://www.baidu.com/" role="button">点我下载</a>
+		</div>
+		<div class="col-md-4">	
+			<img src="img/safari-logo-small.jpg">
+			<h1>Safari</h1>
+			<a class="btn btn-outline-dark" href="https://www.baidu.com/" role="button">点我下载</a>
+		</div>
+		</div>
+		
+		<hr class="myhr">
+		
+		<ul class="nav nav-tabs" id="myTab" role="tablist" data-target="#navbarSupportedContent">
+		  <li class="nav-item">
+			<a class="nav-link active" id="tab-Chrome" data-toggle="tab" href="#Chrome" role="tab" aria-controls="Chrome" aria-selected="true">Chrome</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" id="tab-Firefox" data-toggle="tab" href="#Firefox" role="tab" aria-controls="Firefox" aria-selected="false">Firefox</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" id="tab-Safari" data-toggle="tab" href="#Safari" role="tab" aria-controls="Safari" aria-selected="false">Safari</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" id="tab-Opera" data-toggle="tab" href="#Opera" role="tab" aria-controls="Opera" aria-selected="false">Opera</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" id="tab-IE" data-toggle="tab" href="#IE" role="tab" aria-controls="IE" aria-selected="false">IE</a>
+		  </li>
+		</ul>
+		
+		<div class="tab-content" id="myTabContent"  data-spy="scroll">
+		  <div class="tab-pane fade show active" id="Chrome" role="tabpanel" aria-labelledby="tab-Chrome">
+		  <div class="row feature"><div class="col-md-7">
+		  <div class="feature-heading"><h1>Google Chrome<small>极简主义</small></h1></div>
+		  <div class="article">是由Google开发的一款设计简单、高效的Web浏览工具。
+Google Chrome的特点是简洁、快速。Google Chrome支持多标签浏览，每个标签页面都在独立的“沙箱”内运行，在提高安全性的同时，一个标签页面的崩溃也不会导致其他标签页面被关闭。此外，Google Chrome基于更强大的JavaScript V8引擎，这是当前Web浏览器所无法实现的。
+		</div></div>
+		<div class="col-md-5">
+			<img src="img/chrome-logo.jpg">		
+		</div>
+		</div>
+		</div>
+		  <div class="tab-pane fade" id="Firefox" role="tabpanel" aria-labelledby="tab-Firefox">
+		  <div class="row feature"><div class="col-md-7">
+			<div class="feature-heading"><h1>Mozilla Firefox<small>开源</small></h1></div><div class="article">中文俗称“火狐”（正式缩写为Fx或fx，非正式缩写为FF），是一个自由及开放源代码的网页浏览器，使用Gecko排版引擎，支持多种操作系统，如Windows、Mac OS X及GNU/Linux等。
+根据2013年8月浏览器统计数据，Firefox在全球网页浏览器市占率76%至81%，用户数在各网页浏览器中排名第三，全球估计有6450万位用户。在印度尼西亚、德国和波兰的占有率最高，分别为97.84%、86.41%和84.31%。
+		</div></div>
+		<div class="col-md-5">
+			<img src="img/firefox-logo.jpg">		
+		</div>
+		</div>
+		</div>
+		  <div class="tab-pane fade" id="Safari" role="tabpanel" aria-labelledby="tab-Safari">
+		  <div class="row feature"><div class="col-md-7">
+			<div class="feature-heading"><h1>Safari<small>极致体验</small></h1></div><div class="article">
+		 	是苹果计算机的操作系统Mac OS中的浏览器，使用了KDE的KHTML作为浏览器的运算核心。Safari 是一款浏览器、一个平台，也是对锐意创新的公开邀请。无论在 Mac、PC 或 iPod touch 上运行，Safari 都可提供极致愉悦的网络体验方式，更不断地改写浏览器的定义。Safari使用了KDE的KHTML作为浏览器的计算核心。 该浏览器已支持Windows平台，但是与运行在Mac OS X上的safari相比，有些功能出现丢失。Safari也是iPhone手机、iPod Touch、iPad平板电脑中iOS指定默认浏览器。Safari 以惊人速度渲染网页。与 Mac、PC 及 iPod touch、iPhone、iPad完美兼容。让最爱网站一目了然。聪明的它还会检查拼写和语法。
+			</div>
+			</div>
+			<div class="col-md-5">
+			<img src="img/safari-logo.jpg">		
+			</div>
+			</div>
+			</div>
+		  <div class="tab-pane fade" id="Opera" role="tabpanel" aria-labelledby="tab-Opera">
+		  <div class="row feature"><div class="col-md-7">
+			<div class="feature-heading"><h1>Opera<small>包容</small></h1></div>
+			<div class="article">
+			浏览器因为它的快速、小巧和比其他浏览器更佳的
+标准兼容性获得了国际上的最终用户和业界媒体的承认，并在网上受到很多人的推崇。OperaSoftware开发的Opera浏览器是一款适用于各种平台、操作系统和嵌入式网络产品的高品质、多平台产品，opera浏览器不同于其他浏览器的特点有：
+Opera支持多种操作系统，如Windows、Linux、Mac、FreeBSD、Solaris、BeOS、OS/2、QNX等，此外，Opera还有手机用的版本，如在WindowsMobile和Android手机上安装的OperaMobile和在JAVA上的OperaMini，早在2006年更与Nintendo签下合约，提供NDS及Wii游乐器Opera浏览器软件；也支持多语言，包括简体中文和繁体中文。
+			</div>
+			</div>
+			<div class="col-md-5">
+			<img src="img/opera-logo.jpg">		
+			</div>
+			</div>
+			</div>
+		 <div class="tab-pane fade" id="IE" role="tabpanel" aria-labelledby="tab-IE">
+		 <div class="row feature"><div class="col-md-7">
+			<div class="feature-heading"><h1>Internet Explorer<small>没落</small></h1></div>
+			<div class="article">
+		 是微软公司推出的一款网页浏览器。原称Microsoft Internet Explorer(6版本以前)和Windows Internet Explorer(7、8、9、10、11版本)，简称IE。在IE7以前，中文直译为“网络探路者”，但在IE7以后官方便直接俗称"IE浏览器"。
+2015年3月微软确认将放弃IE品牌。转而在windows 10上，Microsoft Edge取代了。微软于2015年10月宣布2016年1月起停止支持老版本IE浏览器。 
+2016年1月12日，微软公司宣布于这一天停止对IE 8/9/10三个版本的技术支持，用户将不会再收到任何来自微软官方的IE安全更新；作为替代方案，微软建议用户升级到IE 11或者改用Microsoft Edge浏览器。
+		</div></div>
+		<div class="col-md-5">
+			<img src="img/ie-logo.jpg">		
+		</div>
+		</div>
+		</div>
+		</div>
+		
+	</div>
+	<div class="blockquote-footer">
+		<p class="text-right footp"><a href="#" class="btn btn-light ">回到顶部</a></p>
+	</div>
+
+	<div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Bootstrap 4</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					Bootstrap 是全球最受欢迎的前端组件库，用于开发响应式布局、移动设备优先的 WEB 项目。Bootstrap 是一套用于 HTML、CSS 和 JS 开发的开源工具集。利用我们提供的 Sass 变量和大量 mixin、响应式栅格系统、可扩展的预制组件、基于 jQuery 的强大的插件系统，能够快速为你的想法开发出原型或者构建整个 app 。
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">了解了</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.bundle.js"></script>
+  	<script>
+		$(function () {
+            $(".dropdown-menu a").click(function (e) {
+                var href="#"+$(this).attr('href').substring(5);
+                $("#myTab a[href='" + href + "']").tab('show');
+            })
+        })
+	</script>
+  </body>
+</html>
